@@ -19,10 +19,23 @@
         <script src="//code.jquery.com/qunit/qunit-1.18.0.js"></script>
 
         <script>
+            var coins = [200, 100, 50, 20, 10, 5, 2, 1];
             function getChange (totalPayable, cashPaid) {
-                var change = [];
-                // your code goes here
-                
+                let change = [], diference;
+
+                if (totalPayable > cashPaid) {
+                    diference = totalPayable - cashPaid;
+                } else {
+                    diference = cashPaid - totalPayable;
+                }
+
+                for (let coin of coins) {
+                    while (diference >= coin){
+                        change.push(coin);
+                        diference = diference - coin;                            
+                    }
+                }
+
                 return change;
             };
         </script>

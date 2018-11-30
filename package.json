@@ -1,0 +1,23 @@
+{
+  "name": "gitvendingmachine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "change.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cduran/Test-Driven-Development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cduran/Test-Driven-Development/issues"
+  },
+  "homepage": "https://github.com/cduran/Test-Driven-Development#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

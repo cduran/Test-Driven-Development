@@ -2,9 +2,13 @@
   "name": "gitvendingmachine",
   "version": "1.0.0",
   "description": "",
-  "main": "change.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover test.js",
+    "open-coverage": "open ./coverage/lcov-report/index.html",
+    "start": "live-server --port=8000",
+    "docs": "jsdoc change.js",
+    "open-docs": "open ./out/global.html"
   },
   "repository": {
     "type": "git",

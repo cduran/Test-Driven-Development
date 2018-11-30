@@ -23,6 +23,7 @@
   "homepage": "https://github.com/cduran/Test-Driven-Development#readme",
   "devDependencies": {
     "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
     "live-server": "^1.2.1",
     "qunit-tap": "^1.5.1",
     "qunitjs": "^2.4.1"

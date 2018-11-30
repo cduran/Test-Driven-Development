@@ -6,7 +6,8 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 var coins = [200, 100, 50, 20, 10, 5, 2, 1];
 function getChange (totalPayable, cashPaid) {
-    let change = [], diference;
+    var change = [];
+    var diference = 0;
 
     if (totalPayable > cashPaid) {
         diference = totalPayable - cashPaid;
@@ -16,7 +17,7 @@ function getChange (totalPayable, cashPaid) {
 
     while (diference !== 0){
         for (var i = 0; i < coins.length; i++) {
-            let coin = coins[i];
+            var coin = coins[i];
             if (coin <= diference){
                 diference = diference - coin;
                 change.push(coin);
